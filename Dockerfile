@@ -172,6 +172,7 @@ VOLUME /var/run/gridengine
 RUN mkdir /roddy/.roddy
 COPY jfxlibInfo /roddy/.roddy/
 RUN mkdir -p /mnt/datastore/testdata/run_id
+RUN mkdir -p /mnt/datastore/testdata/run_id/mpileup
 
 
 CMD ["/bin/bash", "/start.sh"]
