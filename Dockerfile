@@ -171,8 +171,7 @@ VOLUME /var/run/gridengine
 
 RUN mkdir /roddy/.roddy
 COPY jfxlibInfo /roddy/.roddy/
-RUN mkdir /mnt/datastore/testdata
-RUN mkdir /mnt/datastore/testdata/run_id
+RUN mkdir -p /mnt/datastore/testdata/run_id
 
 
 CMD ["/bin/bash", "/start.sh"]
